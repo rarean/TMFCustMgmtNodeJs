@@ -2,12 +2,13 @@
   "name": "TMFCustMgmtNodeJs",
   "version": "0.0.1",
   "private": true,
-  "description": "New Swagger API Project",
-  "keywords": [],
-  "author": "",
-  "license": "",
+  "description": "TMForum Customer Management API w/NodeJs",
+  "keywords": ["TMFORUM","CUSTOMER","OpenAPI"],
+  "author": "Aaron Perez",
+  "license": "MIT",
   "main": "app.js",
   "dependencies": {
+    "lodash": "^4.14.1",
     "restify": "^4.0.2",
     "swagger-restify-mw": "^0.1.0"
   },
