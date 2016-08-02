@@ -18,6 +18,7 @@ function hubGet(req, res, next) {
 }
 
 function hubDelete(req, res, next){
+	res.setHeader('Content-Type', 'application/json');
 	res.send(204);
 }
 

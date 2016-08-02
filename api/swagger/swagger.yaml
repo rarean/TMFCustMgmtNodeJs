@@ -527,6 +527,8 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"
   '/hub/{hubId}':
+    # binds swagger app logic to a route
+    x-swagger-router-controller: hub
     delete:
       tags:
         - hub
