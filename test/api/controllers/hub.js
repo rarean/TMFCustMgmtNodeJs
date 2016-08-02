@@ -3,7 +3,7 @@ var request = require('supertest');
 var server = require('../../../app');
 var dash = require('lodash');
 
-describe('controllers', function() {
+describe('controller', function() {
 
   describe('hub', function() {
 

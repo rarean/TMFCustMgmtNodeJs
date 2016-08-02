@@ -69,6 +69,8 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"
   '/customer/{customerId}':
+    # binds swagger app logic to a route
+    x-swagger-router-controller: customer
     delete:
       tags:
         - customer
@@ -124,7 +126,7 @@ paths:
       # uses as method name of the controller
       operationId: customerPatch
       summary: customerPatch
-      description: ''
+      description: 'update partial customer info'
       deprecated: false
       parameters:
         - name: customerId
@@ -227,6 +229,8 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"
   '/customerAccount/{customerAccountId}':
+    # binds swagger app logic to a route
+    x-swagger-router-controller: customerAccount
     delete:
       tags:
         - customerAccount
@@ -380,6 +384,8 @@ paths:
           schema:
             $ref: "#/definitions/ErrorResponse"
   '/paymentMean/{paymentMeanId}':
+    # binds swagger app logic to a route
+    x-swagger-router-controller: paymentMean
     delete:
       tags:
         - paymentMean

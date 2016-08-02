@@ -1,46 +1,42 @@
 module.exports = {
-  creditPaymentMean: creditPaymentMean,
-  bankPaymentMean: bankPaymentMean,
-	customerAccount: customerAccount,
-  customer: customer
-};
 
-var creditPaymentMean = {
-	id: '64',
-	href: 'http://serverlocation:port/customerManagement/paymentMean/64',
-	name: 'my credit card payment mean',
-	validFor: {
-		startDateTime: '2013-04-19T20:42:23.0Z',
-		endDateTime: '2013-06-19T04:00:00.0Z'
-	},
-	type: 'credit',
-	relatedParty: {
-		id: '1',
-		href: 'http://serverlocation:port/partyManagement/individual/1',
-		role: 'customer',
-		name: 'John Doe'
-	},
-	creditCard: {}
-};
+  creditPaymentMean: {
+		id: '64',
+		href: 'http://serverlocation:port/customerManagement/paymentMean/64',
+		name: 'my credit card payment mean',
+		validFor: {
+			startDateTime: '2013-04-19T20:42:23.0Z',
+			endDateTime: '2013-06-19T04:00:00.0Z'
+		},
+		type: 'credit',
+		relatedParty: {
+			id: '1',
+			href: 'http://serverlocation:port/partyManagement/individual/1',
+			role: 'customer',
+			name: 'John Doe'
+		},
+		creditCard: {}
+  },
 
-var bankPaymentMean = {
-	id: '45',
-	href: 'http://serverlocation:port/customerManagement/paymentMean/45',
-	name: 'my credit card payment mean',
-	validFor: {
-		startDateTime: '2013-04-19T20:42:23.0Z',
-		endDateTime: '2013-06-19T04:00:00.0Z'
-	},
-	type: 'bank',
-	relatedParty: {
-		id: '1',
-		href: 'http://serverlocation:port/partyManagement/individual/1',
-		role: 'customer',
-		name: 'John Doe'
-	},
-	bankAccount: {}
-};
-var customer = {
+	bankPaymentMean: {
+		id: '45',
+		href: 'http://serverlocation:port/customerManagement/paymentMean/45',
+		name: 'my credit card payment mean',
+		validFor: {
+			startDateTime: '2013-04-19T20:42:23.0Z',
+			endDateTime: '2013-06-19T04:00:00.0Z'
+		},
+		type: 'bank',
+		relatedParty: {
+			id: '1',
+			href: 'http://serverlocation:port/partyManagement/individual/1',
+			role: 'customer',
+			name: 'John Doe'
+		},
+		bankAccount: {}
+},
+
+customer: {
 	id: 'c1234',
 	href: 'http://serverlocation:port/customerManagement/customer/c1234',
 	name: 'DisplayName',
@@ -161,8 +157,8 @@ var customer = {
 			name: 'my credit card payment mean'
 		}
 	]
-};
-var customerAccount = {
+},
+customerAccount: {
 			id: '1',
 			href: 'http://serverlocation:port/customerManagement/customerAccount/1',
 			name: 'CustomerAccount1',
@@ -278,4 +274,5 @@ var customerAccount = {
 				}
 			],
       lastModified: '2013-04-19T20:42:23.0Z'
+  }
 };
