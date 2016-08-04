@@ -3,14 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "description": "TMForum Customer Management API w/NodeJs",
-  "keywords": ["TMFORUM","CUSTOMER","OpenAPI"],
+  "keywords": [
+    "TMFORUM",
+    "CUSTOMER",
+    "OpenAPI"
+  ],
   "author": "Aaron Perez",
   "license": "MIT",
   "main": "app.js",
   "dependencies": {
     "lodash": "^4.14.1",
     "restify": "^4.0.2",
-    "swagger-restify-mw": "^0.1.0"
+    "swagger-restify-mw": "^0.1.0",
+    "swagger-tools": "^0.10.1"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
